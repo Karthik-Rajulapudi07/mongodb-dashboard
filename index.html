@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MongoDB Dashboard</title>
+  <script src="https://unpkg.com/@mongodb-js/charts-embed-dom"></script>
+</head>
+<body>
+  <h1>MongoDB Dashboard</h1>
+  <div id="dashboard" style="width: 100%; height: 600px;"></div>
+
+  <script>
+    const sdk = new ChartsEmbedSDK({
+      baseUrl: "https://charts.mongodb.com/charts-iotproject-brvqyzy"
+    });
+
+    const dashboard = sdk.createDashboard({
+      dashboardId: "9731513f-c095-4b2c-b1b7-6609426a0ca9"
+    });
+
+    dashboard.render(document.getElementById("dashboard"));
+  </script>
+</body>
+</html>
