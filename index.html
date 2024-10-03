@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MongoDB Dashboard</title>
+  <script src="https://unpkg.com/@mongodb-js/charts-embed-dom"></script>
   <style>
   body, html {
     margin: 0;
@@ -10,17 +14,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   #dashboard {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MongoDB Dashboard</title>
-  <script src="https://unpkg.com/@mongodb-js/charts-embed-dom"></script>
 </head>
 <body>
   <h1>MongoDB Dashboard</h1>
